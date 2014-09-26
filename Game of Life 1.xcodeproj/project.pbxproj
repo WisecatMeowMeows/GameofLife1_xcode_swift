@@ -13,6 +13,7 @@
 		7F3A977319D4B5C4001C113D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F3A977219D4B5C4001C113D /* Images.xcassets */; };
 		7F3A977619D4B5C4001C113D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F3A977419D4B5C4001C113D /* LaunchScreen.xib */; };
 		7F3A978219D4B5C5001C113D /* Game_of_Life_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A978119D4B5C5001C113D /* Game_of_Life_1Tests.swift */; };
+		7F3A978C19D4BA42001C113D /* renderingviewclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A978B19D4BA42001C113D /* renderingviewclass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		7F3A977B19D4B5C5001C113D /* Game of Life 1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Game of Life 1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F3A978019D4B5C5001C113D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F3A978119D4B5C5001C113D /* Game_of_Life_1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game_of_Life_1Tests.swift; sourceTree = "<group>"; };
+		7F3A978B19D4BA42001C113D /* renderingviewclass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = renderingviewclass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				7F3A976B19D4B5C4001C113D /* AppDelegate.swift */,
 				7F3A976D19D4B5C4001C113D /* ViewController.swift */,
+				7F3A978B19D4BA42001C113D /* renderingviewclass.swift */,
 				7F3A976F19D4B5C4001C113D /* Main.storyboard */,
 				7F3A977219D4B5C4001C113D /* Images.xcassets */,
 				7F3A977419D4B5C4001C113D /* LaunchScreen.xib */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F3A976E19D4B5C4001C113D /* ViewController.swift in Sources */,
+				7F3A978C19D4BA42001C113D /* renderingviewclass.swift in Sources */,
 				7F3A976C19D4B5C4001C113D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

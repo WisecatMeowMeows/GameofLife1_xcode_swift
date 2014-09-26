@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var buttonStart: UIButton!
+    @IBOutlet weak var viewBox: RenderingViewClass!
+
+    var lastCell: CGPoint? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +26,34 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func onButtonPress(sender: AnyObject) {
+        //begin cell activity
+        viewBox.toggleSimulation()
+        
+    }
+
+    @IBAction func onTap(sender: UITapGestureRecognizer) {
+        let newCell = viewBox.getCell(sender.locationInView(viewBox) )
+        
+        if (newCell == nil) { return }
+        
+        viewBox.toggleCell(newCell!)
+        
+    }
+    
+    @IBAction func onPan(sender: UIPanGestureRecognizer) {
+        
+        let newCell = viewBox.getCell(sender.locationInView(viewBox) )
+        
+        if (newCell == nil) { return }
+        
+        if (lastCell == nil || lastCell!.x != newCell!.x || lastCell!.y != newCell!.y)
+        {
+            lastCell = newCell
+            viewBox.toggleCell(newCell!)
+        }
+    }
+    
 }
+
 
